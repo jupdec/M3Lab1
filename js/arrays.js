@@ -43,7 +43,7 @@ myMovies3[5] = "Avengers";
 myMovies3[6] = "Litte Miss Sunshine";
 
 for (var i = 0; i < myMovies3.length; i++) {
-    window.console.log(myMovies3[i]);
+  window.console.log(myMovies3[i]);
 }
 
 //6
@@ -57,9 +57,9 @@ myMovies4[5] = "Avengers";
 myMovies4[6] = "Litte Miss Sunshine";
 
 for (index in myMovies4) {
-    if (myMovies4.hasOwnProperty(index)) {
-        window.console.log(myMovies4[index]);
-    }
+  if (myMovies4.hasOwnProperty(index)) {
+    window.console.log(myMovies4[index]);
+  }
 }
 
 //7
@@ -74,9 +74,9 @@ myMovies5[6] = "Litte Miss Sunshine";
 
 myMovies5.sort();
 for (index in myMovies5) {
-    if (myMovies5.hasOwnProperty(index)) {
-        window.console.log(myMovies5[index]);
-    }
+  if (myMovies5.hasOwnProperty(index)) {
+    window.console.log(myMovies5[index]);
+  }
 }
 
 //8
@@ -96,19 +96,19 @@ leastmyFavmov[2] = "Free Man";
 
 window.console.log("Movies I like:\n\n");
 for (var i = 0; i < myMovies6.length; i++) {
-    window.console.log(myMovies6[i]);
+  window.console.log(myMovies6[i]);
 }
 
 window.console.log("I regret watching:\n\n");
 for (var i = 0; i < leastmyFavmov.length; i++) {
-    window.console.log(leastmyFavmov[i]);
+  window.console.log(leastmyFavmov[i]);
 }
 
 //9
 var moviees = myMovies6.concat(leastmyFavmov);
 moviees.reverse();
 for (var i = 0; i < moviees.length; i++) {
-    window.console.log(moviees[i]);
+  window.console.log(moviees[i]);
 }
 
 //10
@@ -137,19 +137,19 @@ window.console.log(moviees4);
 //13
 var moviesWithRanking = [["Peaceful Warrior", 1], ["Hunger Games", 2], ["Tag", 3], ["Fast and Furious", 4], ["The Iron Man", 5]];
 
-var movieNames = moviesWithRanking.filter(function(movie) {
+var movieNames = moviesWithRanking.filter(function (movie) {
   return typeof movie[0] === "string";
 });
 
-movieNames.forEach(function(movie) {
+movieNames.forEach(function (movie) {
   window.console.log(movie[0]);
 });
 
 //14
 var employees = ["ZAK", "JESSICA", "MARK", "FRED", "SALLY"];
-var showEmployee = function(arr) {
+var showEmployee = function (arr) {
   console.log("Employees:");
-  arr.forEach(function(employee) {
+  arr.forEach(function (employee) {
     console.log(employee);
   });
 };
@@ -157,19 +157,19 @@ showEmployee(employees);
 
 //15
 function filterValues(array) {
-    return array.filter(function (value) {
-      return value !== false && value !== null && value !== 0 && value !== "";
-    });
-  }
-  
+  return array.filter(function (value) {
+    return value !== false && value !== null && value !== 0 && value !== "";
+  });
+}
+
 window.console.log(filterValues([58, '', 'abcd', true, null, false, 0]));
 
 //16
 function getRandomItem(array) {
- return array[Math.floor(Math.random() * array.length)];
+  return array[Math.floor(Math.random() * array.length)];
 }
 var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-window.console.log(getRandomItem(num));  
+window.console.log(getRandomItem(num));
 
 //17
 function getLargestNum(numbers) {
